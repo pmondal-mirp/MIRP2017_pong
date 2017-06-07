@@ -9,13 +9,14 @@ float PADDLE_VELOCITY = 10;
 int bgColor = 0;
 
 // Ball parameters
-float ballX, ballY;
+float ballX= displayWidth/2, ballY = displayHeight/2;
 float ballVx, ballVy; // ballVx is always BALL_VELOCTY or -BALL_VELOCITY; ballVy varies.
 float ballRadius = 10;
 int ballColor = 255;
 
 // Y - position of Left and Right paddles
-float leftPaddle=displayHeight/2, rightPaddle=displayHeight/2;
+float leftPaddleY=displayHeight/2, rightPaddleY=displayHeight/2;
+float rightPaddleX=displayWidth, leftPaddleX=0;
 // Paddle Dimensions
 float paddleLength = 180, paddleWidth = 20;
 int paddleColor = 255;
